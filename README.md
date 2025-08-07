@@ -30,8 +30,8 @@ This dataset contains detailed information about products currently in stock.
 | Cost_Price                     | Purchase price per unit                                        |
 | Selling_Price                  | Selling price per unit                                         |
 | Quantity_in_Stock              | Current quantity available in inventory                        |
-| Reorder_Level(Calculated)      | Threshold at which product should be restocked                 |
-| Expiry_Date (Calculated)       | Expiry date of the product                                     |
+| Stock_Status(Calculated)       | Threshold at which product should be restocked                 |
+| Expiry_Status(Calculated)      | Expiry date of the product                                     |
 
 
 2. `Sales_Data.xlsx`
