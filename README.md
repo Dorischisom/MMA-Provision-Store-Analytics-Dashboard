@@ -60,12 +60,10 @@ This dataset contains transactional sales data between 2024 and 2025.
 # Key Calculations
 ### Expiry_Status
 
-```=IF([@[Expiry_Date]] < TODAY(), 0, IF([@[Expiry_Date]] <= TODAY() + 30, 2, 1))
-
+``` =IF([@[Expiry_Date]] < TODAY(), 0, IF([@[Expiry_Date]] <= TODAY() + 30, 2, 1))
 ```
 ### Stock_status
-```=IF([@[Quantity_in_Stock]]<=[@[Reorder_Level]],1,2)
-
+``` =IF([@[Quantity_in_Stock]]<=[@[Reorder_Level]],1,2)
 ```
 
 # Dashboard Features
@@ -89,7 +87,7 @@ This dashboard is designed for deep-dive analysis on a per-product basis. It fea
 
   - **Restock Status:** A clear indicator (`YES` or `NO`) based on the Reorder_Level to prevent stockouts.
 
-  - **Expiry Status:** A clear indicator (`YES`, `NO` OR `Expiring in 30 days`) that flags if a product is nearing its expiry date within a defined threshold (e.g., 30 days).
+  - **Expiry Status:** A clear indicator (`YES`, `NO` Or `Expiring in 30 days`) that flags if a product is nearing its expiry date within a defined threshold (e.g., 30 days).
  
 ## 2. Sales Analysis Dashboard
 
