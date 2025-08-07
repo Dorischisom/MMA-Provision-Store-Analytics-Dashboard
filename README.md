@@ -60,11 +60,10 @@ This dataset contains transactional sales data between 2024 and 2025.
 # Key Calculations
 ### Expiry_Status
 
-``` =IF([@[Expiry_Date]] < TODAY(), 0, IF([@[Expiry_Date]] <= TODAY() + 30, 2, 1))
-```
+`=IF([@[Expiry_Date]] < TODAY(), 0, IF([@[Expiry_Date]] <= TODAY() + 30, 2, 1))`
+
 ### Stock_status
-``` =IF([@[Quantity_in_Stock]]<=[@[Reorder_Level]],1,2)
-```
+`=IF([@[Quantity_in_Stock]]<=[@[Reorder_Level]],1,2)`
 
 # Dashboard Features
 ## 1. Product Analysis Dashboard
